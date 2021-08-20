@@ -1,0 +1,38 @@
+body {
+    background-color: lightcoral;
+}
+
+#co1 {
+    background-color: deepskyblue;
+    width: 400px;
+    height: 75px;
+    border-radius: 20px;
+    color: white;
+    border: 1px double;
+    border-style:
+
+
+}
+
+h4 {
+    font-weight: bold;
+    color: white;
+}
+
+
+#webcam
+{
+    border:1px white dashed;
+}
+
+.btn123
+{
+   background-color:white;
+   color:yellowgreen;
+   font-weight:bold;
+   width: 150px;
+   height: 30px;
+   border-radius: 30px;
+   font-size: 15px;
+   border-color:white;
+}

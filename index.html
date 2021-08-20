@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <br>
+
+        <center><button id="co1">
+
+
+
+                <h4>&nbsp;&nbsp;G&nbsp;&nbsp;E&nbsp;&nbsp;S&nbsp;&nbsp;T&nbsp;&nbsp;U&nbsp;&nbsp;R&nbsp;&nbsp;E &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W&nbsp;&nbsp;E&nbsp;&nbsp;B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;P&nbsp;&nbsp;P &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&#128076; &nbsp;&nbsp;&nbsp;&nbsp; &#128077;&nbsp;&nbsp;&nbsp;&nbsp; &#128406; &nbsp;&nbsp;&nbsp;&nbsp; &#9994;&nbsp;&nbsp;&nbsp;&nbsp;&#128079; &nbsp;&nbsp;&nbsp;&nbsp;&#129304;</h4>
+            </button>
+            <br>
+            <br>
+            <h4>Take a Selfi of Gesture to know about it's meaning</h4>
+            <br>
+            <h4>On the following Gestures Model is trained -</h4>
+
+            <h3>&#128076;&nbsp;&nbsp; &#128077; &nbsp;&nbsp; &#128406; &nbsp;&nbsp; &#9994; &nbsp;&nbsp; &#129304;</h3>
+
+            <div class="col-sm-4 col-xs-12 col-lg-4"><button class="btn123">Webcam View -</button>
+                <div id="camera"></div><button onclick="takesnapshot()" class="btn btn-success">Captured Image</button>
+            </div>
+            <div class="col-sm-4 col-xs-12 col-lg-4"><button class="btn123">Prediction -</button>
+                <div id="prediction">
+                    <h3 id="object">Object :<span id="result_object"></span></h3>
+                    <h3 id="object">Accuracy :<span id="result_accuracy"></span></h3>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 col-lg-4">
+                <button class="btn123">  Snapshot -</button>
+                  
+                <div id="snapshot" ></div>
+                <button class="btn btn-info" onclick="identifyimage()">
+                    Predict Emotion</button>
+            </div>
+        </center>
+
+    </div>
+
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
